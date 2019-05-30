@@ -1,0 +1,12 @@
+---
+
+- name: Test-1
+  hosts: localhost
+  connection: local
+  become: false
+  gather_facts: false
+
+  tasks:
+  - name: Test-2
+    debug:
+      msg: "This is a test"
